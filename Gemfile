@@ -44,6 +44,8 @@ gem "thruster", require: false
 gem "devise", "~> 4.9"
 # 2025-11-05 AR: Add Bulma gem for styling app
 gem "bulma-rails", "~> 1.0"
+# Add Dart SASS so Bulma works properly
+gem "dartsass-rails", "~> 0.5.1"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
