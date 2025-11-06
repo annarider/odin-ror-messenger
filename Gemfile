@@ -42,6 +42,8 @@ gem "thruster", require: false
 
 # 2025-11-05 AR: Add Devise gem for authentication
 gem "devise", "~> 4.9"
+# 2025-11-05 AR: Add Bulma gem for styling app
+gem "bulma-rails", "~> 1.0"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
