@@ -24,3 +24,10 @@ const messageChannel = consumer.subscriptions.create("MessageChannel", {
             </article>`
   }
 });
+
+document.addEventListener("turbo:submit-end", (event) => {
+  const form = event.target
+  if (form.id === 'message-form') {
+    form.reset()
+  }
+});
