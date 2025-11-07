@@ -2,6 +2,16 @@
 
 <div>
   <div id="message-display">
+    <% @messages.each do |message| %>
+      <article class="message">
+        <div class="message-header">
+          <%= message.user.email %>
+        </div>
+        <div class="message-body">
+          <%= message.body %>
+        </div>
+      </article>
+    <% end %>
   </div>
   <div>
     <%= form_with model: @message, local: false do |f| %>
