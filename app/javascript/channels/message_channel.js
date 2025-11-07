@@ -30,12 +30,13 @@ document.addEventListener("turbo:load", () => {
   if(form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault()
-      let messageInput = document.querySelector('#message-input').value
-      if(messageInput == '') return;
+      let messageInput = document.querySelector('#message-input')
+      if(messageInput.value == '') return;
       const message = {
-        body: messageInput
+        body: messageInput.value
       }
       messageChannel.send({message: message})
+      messageInput.value = ''
     })
   }
 })
